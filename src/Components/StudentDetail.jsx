@@ -21,7 +21,7 @@ const StudentDetail = () => {
   return (
     <div className="min-h-screen relative z-1 text-white flex flex-col items-center">
       <h1 className="font-bold text-6xl text-center my-4">Student Details</h1>
-      <div className="flex gap-8 justify-center flex-wrap items-center p-4">
+      <div className="flex gap-8 justify-center flex-wrap items-center p-4 overflow-y-scroll">
         {data.map((student, index) => (
           <div key={index} className="bg-[#2c3e5080] text-white p-4 rounded-lg w-fit shadow-lg">
             <h2 className="text-xl font-semibold">{student.name}</h2>
